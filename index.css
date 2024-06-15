@@ -273,6 +273,9 @@ body{
 		width: 80%;
 		left: 10%;
 	}
+	.slider-item-panel{
+		margin-left: 50%;
+	}
 	#header > span:nth-child(3){
 		margin-left: 15%;
 	}
@@ -302,7 +305,7 @@ body{
 }
 @media all and (max-width: 425px){
 	.slider-item-panel{
-		width: 90%;
+		width: 95%;
 	}
 	.slider-item-panel:nth-child(1) > div{
 		margin: .9rem 0;

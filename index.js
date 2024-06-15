@@ -13,12 +13,12 @@ allPanelsText.push(["Фронтенд с JS", "Качественная вёрс
 allPanelsText.push(["Написание стилей", "Анимации", "Движение"]);
 allPanelsText.push(["Структурированный код", "Вместе с PHP", "Вместе с JS"]);
 
-if(window.innerWidth < 1025){
+/*if(window.innerWidth < 1025){
 	allPanelsText[0][0]  = "Написание back-end для<br>вашего сайта на PHP";
 }
 else{
 	allPanelsText[0][0]  = "Написание back-end для вашего сайта на PHP";
-}
+}*/
 
 const panels = document.querySelectorAll(".slider-item-panel");
 for(let i = 0; i < panels.length; i++){
