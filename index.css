@@ -150,7 +150,6 @@ body{
 	background-size: cover;
 	background-position: center;
 	overflow-x: hidden;
-	/*border-radius: 1.5rem;*/
 }
 .slider-item:nth-child(1){
 	background-image: url('img/IMG_2565.JPG');
@@ -226,6 +225,9 @@ body{
 	.slider-item-panel> div {
 		width: fit-content;
 	}
+	.slider-item-panel:nth-child(1) {
+		margin-left: 42%;
+	}
 }
 @media all and (max-width: 840px){
 	.slider-item-panel> div > span{
@@ -239,6 +241,9 @@ body{
 	#header > span:nth-child(3){
 		margin-left: 0%;
 	}
+	.slider-item-panel > div > span{
+		font-size: 1.3rem;
+	}
 }
 @media all and (max-width: 425px){
 	.slider-item-panel{
@@ -247,9 +252,6 @@ body{
 	}
 	.slider-item-panel:nth-child(1) > div{
 		margin: .9rem 0;
-	}
-	.slider-item-panel > div > span{
-		font-size: 1.3rem;
 	}
 	#arrows{
 		left: 2%;
