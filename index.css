@@ -276,6 +276,10 @@ body{
 	#header > span:nth-child(3){
 		margin-left: 15%;
 	}
+	#footer{
+		flex-direction: column;
+		align-items: center;
+	}
 }
 @media all and (max-width: 840px){
 	.slider-item-panel> div > span{
