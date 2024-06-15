@@ -1,8 +1,25 @@
-const arrow1 = document.querySelector(".arrow:nth-child(1)");
-const arrow2 = document.querySelector(".arrow:nth-child(2)");
+const arrow1 = document.querySelector(".arrow:nth-child(1)"); //Левая стрелка
+const arrow2 = document.querySelector(".arrow:nth-child(2)"); //Правая стрелка
 const chain = document.getElementById("chain");
 
-const dots = document.querySelectorAll("#dots > div");
+const dots = document.querySelectorAll("#dots > div"); //Точки слайдера
+
+const h_contact = document.querySelector("#header > span:nth-child(3)"); //Связаться со мной
+
+let allPanelsText = []; //Для 4 панелей, по 1 списку на панель
+allPanelsText.push(["Написание back-end для вашего сайта на PHP", "Установление на хостинг", "Выполнение лабораторных"]);
+allPanelsText.push(["Фронтенд с JS", "Качественная вёрстка", "Адаптив"]);
+allPanelsText.push(["Написание стилей", "Анимации", "Движение"]);
+allPanelsText.push(["Структурированный код", "Вместе с PHP", "Вместе с JS"]);
+
+const panels = document.querySelectorAll(".slider-item-panel");
+for(let i = 0; i < panels.length; i++){
+	let str = "";
+	allPanelsText[i].forEach((e)=>{
+		str += `<div><img src="img/like.png"><span>${e}</span></div>`;
+	});
+	panels[i].innerHTML = str;
+}
 
 let x = 0;
 let item = 0;
@@ -45,3 +62,8 @@ function updateDots(num){
 	});
 	dots[num].style.backgroundColor = 'white';
 }
+
+
+h_contact.addEventListener('click',()=>{
+	window.open('https://t.me/fluxdeken');
+});
