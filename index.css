@@ -142,7 +142,7 @@ body{
 	display: flex;
 	width: 400%;
 	height: 100%;
-	transition: .7s;
+	transition: 1.2s;
 }
 .slider-item{
 	height: 100%;
@@ -168,10 +168,13 @@ body{
 	display: flex;
 	align-items: center;
 	flex-wrap: wrap;
-	margin-top: 8rem;
+	margin-top: 11.5rem;
 	margin-left: 50%;
 	transform: translateX(-50%);
 	justify-content: center;
+}
+#chain .slider-item:nth-child(1) .slider-item-panel{
+	margin-top: 8.5rem;
 }
 .slider-item-panel > div{
 	display: flex;
@@ -181,6 +184,7 @@ body{
 	justify-content: center;
 	border-radius: 2.5rem;
 	margin: .7rem .7rem;
+	border: 1px solid black;
 }
 .slider-item-panel > div > span{
 	text-align: center;
@@ -192,13 +196,57 @@ body{
 	height: 1.5rem;
 }
 
+/* FAQ */
+#FAQ{
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+	width: 80%;
+	position: relative;
+	left: 10%;
+}
+#FAQ > h1{
+	width: fit-content;
+}
+#FAQ > span{
+	font-size: 1.3rem;
+	margin: .3rem 0;
+	text-align: center;
+}
+#FAQ > .question{
+	cursor: pointer;
+	border-radius: 1.5rem;
+	padding: .4rem .9rem;
+	border: 2px solid green;
+}
+#FAQ > .answer{
+	display: none;
+}
+
+/* FOOTER */
+#footer{
+	margin-top: 3rem;
+	width: 100%;
+	display: flex;
+	align-items: start;
+	justify-content: center;
+	background-color: #303030;
+}
+.footer-item{
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: center;
+	margin: 0 1.3rem;
+}
+.footer-item > h3, .footer-item > span, .footer-item > span > a{
+	color: white;
+	text-align: center;
+}
 @media all and (max-width: 1371px){
 	.slider-item-panel{
 		flex-direction: column;
-		width: 80%;
-	}
-	.slider-item-panel> div{
-		margin: .9rem 0;
 		width: 80%;
 	}
 }
@@ -208,6 +256,12 @@ body{
 	}
 	#header > span:nth-child(3){
 		margin-left: 30%;
+	}
+	#chain .slider-item:not(.slider-item:nth-child(1)) .slider-item-panel{
+		margin-top: 10.5rem;
+	}
+	.slider-item-panel:not(.slider-item-panel:nth-child(1)){
+		margin-top: 10.5rem;
 	}
 }
 @media all and (max-width: 1024px){
@@ -222,12 +276,6 @@ body{
 	#header > span:nth-child(3){
 		margin-left: 15%;
 	}
-	.slider-item-panel> div {
-		width: fit-content;
-	}
-	.slider-item-panel:nth-child(1) {
-		margin-left: 42%;
-	}
 }
 @media all and (max-width: 840px){
 	.slider-item-panel> div > span{
@@ -241,6 +289,9 @@ body{
 	#header > span:nth-child(3){
 		margin-left: 0%;
 	}
+	#chain .slider-item:nth-child(1) .slider-item-panel{
+		margin-top: 5rem;
+	}
 	.slider-item-panel > div > span{
 		font-size: 1.3rem;
 	}
@@ -248,7 +299,6 @@ body{
 @media all and (max-width: 425px){
 	.slider-item-panel{
 		width: 90%;
-		margin-top: 5rem;
 	}
 	.slider-item-panel:nth-child(1) > div{
 		margin: .9rem 0;
