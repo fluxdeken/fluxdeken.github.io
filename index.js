@@ -6,6 +6,18 @@ const dots = document.querySelectorAll("#dots > div"); // Точки слайд�
 
 const h_contact = document.querySelector("#header > span:nth-child(3)"); // Связаться со мной
 
+// MESSAGE
+const msg = document.getElementById("msg");
+const msg_hm = document.getElementById("msg_hm");
+
+setTimeout(()=>{
+	msg.classList.add("opened");
+}, 2000);
+
+msg_hm.addEventListener('click', ()=>{
+	msg.classList.remove("opened");
+});
+
 // HEADER
 h_contact.addEventListener('click',()=>{
 	window.open('https://t.me/fluxdeken');
