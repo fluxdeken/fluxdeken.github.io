@@ -137,6 +137,8 @@ body{
 	width: 100%;
 	height: 100%;
 	border-radius: 1.5rem;
+	backface-visibility: hidden;
+    transform: translate3d(0, 0, 0);
 }
 #chain{
 	display: flex;
@@ -232,6 +234,7 @@ body{
 	align-items: start;
 	justify-content: center;
 	background-color: #303030;
+	padding: 1rem 0;
 }
 .footer-item{
 	display: flex;

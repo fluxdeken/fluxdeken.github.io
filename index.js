@@ -6,6 +6,11 @@ const dots = document.querySelectorAll("#dots > div"); // Точки слайд�
 
 const h_contact = document.querySelector("#header > span:nth-child(3)"); // Связаться со мной
 
+// HEADER
+h_contact.addEventListener('click',()=>{
+	window.open('https://t.me/fluxdeken');
+});
+
 // SLIDER
 let allPanelsText = []; // Для 4 панелей, по 1 списку на панель
 allPanelsText.push(["Написание back-end для<br>вашего сайта на PHP", "Установление на хостинг", "Выполнение лабораторных"]);
@@ -93,14 +98,10 @@ function updateDots(num){
 	dots[num].style.backgroundColor = 'white';
 }
 
-// HEADER
-h_contact.addEventListener('click',()=>{
-	window.open('https://t.me/fluxdeken');
-});
-
 // FAQ Вопросы и ответы
 const spans = document.querySelectorAll("#FAQ > span"); 
 const answers = document.querySelectorAll("#FAQ > .answer");
+
 let openedSpan = -1;
 for(let i = 0; i < spans.length; i++){
 	spans[i].addEventListener('click', ()=>{
