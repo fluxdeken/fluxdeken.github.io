@@ -6,6 +6,15 @@ const dots = document.querySelectorAll("#dots > div"); // Точки слайд�
 
 const h_contact = document.querySelector("#header > span:nth-child(3)"); // Связаться со мной
 
+const divs = document.querySelectorAll("body > div");
+
+setTimeout(()=>{
+	divs.forEach((e)=>{
+		e.classList.add('active');
+	});
+}, 300);
+
+
 // MESSAGE
 const msg = document.getElementById("msg");
 const msg_hm = document.getElementById("msg_hm");
@@ -40,8 +49,8 @@ else{
 const panels = document.querySelectorAll(".slider-item-panel");
 for(let i = 0; i < panels.length; i++){
 	let str = "";
-	allPanelsText[i].forEach((e)=>{
-		str += `<div><img src="img/like.png"><span>${e}</span></div>`;
+	allPanelsText[i].forEach((e)=>{ // <img src="img/like.png" alt="Img">
+		str += `<div><span>${e}</span></div>`;
 	});
 	panels[i].innerHTML = str;
 }

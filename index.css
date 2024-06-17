@@ -19,6 +19,13 @@ body{
 	font-weight: 400;
 	overflow-x: hidden;
 }
+body > div{
+	opacity: 0;
+	transition: opacity 2s;
+}
+body > div.active{
+	opacity: 1;
+}
 /* MSG */
 #msg{
 	position: fixed;
@@ -26,13 +33,13 @@ body{
 	left: 50%;
 	transform: translate(-50%, -150%);
 	transition: 1s;
-	border-radius: 1.5rem;
+	border-radius: .3;
 	padding: 1rem;
 	display: flex;
 	justify-content: center;
 	align-items: center;
 	background-color: white;
-	box-shadow: 2px 3px 3px black;
+	box-shadow: 1px 1px 4px #4dcfff;
 	z-index: 3;
 }
 #msg > span{
@@ -42,20 +49,20 @@ body{
 #msg > div{
 	margin-left: .5rem;
 	margin-top: .15rem;
-	background-color: #e6e6e6;
+	background-color: #9ce4ff; /*#e6e6e6;*/
 	width: 30px;
 	height: 30px;
-	border-radius: 2.5rem;
+	border-radius: .3;
 	padding: .6rem .2rem .2rem .6rem;
 	cursor: pointer;
 }
 #msg > div:hover{
-	background-color: #a8a8a8;
+	background-color: #76adc2;
 }
 #msg > div > div{
 	height: 2px;
 	width: 30px;
-	background-color: #4d4d4d;
+	background-color: #12b6fc; /*#4d4d4d;*/
 	transform-origin: 0 50%;
 	margin: .05rem 0 0 .05rem;
 }
@@ -83,6 +90,7 @@ body{
 }
 #header > span{
 	white-space: nowrap;
+	color: #03528f;
 }
 #header > span:nth-child(1){
 	font-weight: 500;
@@ -145,6 +153,10 @@ body{
 	background-size: cover;
 	background-position: center;
 	cursor: pointer;
+	transition: .3s;
+}
+.arrow:hover{
+	background-color: #86afcf;
 }
 .arrow:nth-child(1) > div{
 	background-color: #0a74c4;
@@ -237,9 +249,9 @@ body{
 	background-color: white;
 	align-items: center;
 	justify-content: center;
-	border-radius: 2.5rem;
+	/*border-radius: 2.5rem;*/
 	margin: .7rem .7rem;
-	border: 1px solid black;
+	border: 1px solid #0a74c4;
 }
 .slider-item-panel > div > span{
 	text-align: center;
@@ -273,7 +285,7 @@ body{
 	cursor: pointer;
 	border-radius: 1.5rem;
 	padding: .4rem .9rem;
-	border: 2px solid green;
+	border: 2px solid #0a74c4;
 }
 #FAQ > .answer{
 	display: none;
@@ -331,6 +343,9 @@ body{
 	}
 	.slider-item-panel{
 		margin-left: 50%;
+	}
+	#chain{
+		transition: .8s;
 	}
 	#header > span:nth-child(3){
 		margin-left: 15%;
