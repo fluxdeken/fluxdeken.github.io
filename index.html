@@ -1,125 +1,75 @@
-<html>
-	<head>
-		<title>Главная</title>
-		<link rel="stylesheet" type="text/css" href="index.css">
-		<meta charset="UTF-8">
-		<meta name="viewport" content="width=device-width, initial-scale=1.0">
-		<link rel="icon" href="img/like.png" type="image/png" sizes="16x16">
-	</head>
-	
-	
-	<body>
-		<div id="msg">
-			<span>Не тратьте время на сомнительных исполнителей!</span>
-			<div id="msg_hm">
-				<div></div>
-				<div></div>
-			</div>
-		</div>
-		<div id="header">
-			<span>FLUXDEKEN</span>
-			<span>Создание сайтов, вёрстка, back-end.</span>
-			<span>Связаться со мной <img src="img/telegram2.png"></span>
-		</div>
-		
-		<div id="arrows">
-			<div class="arrow">
-				<div></div>
-				<div></div>
-			</div>
-			
-			<div class="arrow">
-				<div></div>
-				<div></div>
-			</div>
-		</div>
-		
-		<div id="dots">
-			<div></div>
-			<div></div>
-			<div></div>
-			<div></div>
-		</div>
-		
-		<div id="slider">
-			<div id="slider-container">
-				<div id="chain">
-					<div class="slider-item">
-						<div class="slider-item-panel"></div>
-					</div>
-					<div class="slider-item">
-						<div class="slider-item-panel"></div>
-					</div>
-					<div class="slider-item">
-						<div class="slider-item-panel"></div>
-					</div>
-					<div class="slider-item">
-						<div class="slider-item-panel"></div>
-					</div>
-				</div>
-			</div>
-		</div>
-		
-		<div id="FAQ">
-			<h1>Вопросы и ответы</h1>
-			<span class="question">За сколько выполните работу?</span>
-			<span class="answer">
-				Лабораторные выполняются в течение 1-2 дней.<br>
-				Задачки - несколько часов.<br>
-				Элементы сайта (слайдеры, формы, хедеры): 1-2 дня <br>
-				Страницы сайта и полноценные сайты - от нескольких дней до нескольких недель.
-			</span>
-			<span class="question">Какие лабораторные делаете?</span>
-			<span class="answer">
-				Лабораторные, связанные с веб-разработкой (HTML, CSS, PHP, JS)<br>
-				Некоторые задачи и лабораторные по C++
-			</span>
-			<span class="question">Как с вами связаться?</span>
-			<span class="answer">
-				Используйте мой <a href="https://t.me/fluxdeken" style="color: black;">телеграм</a> @fluxdeken или пишите мне на почту:<br>
-				fluxdekenreboot@gmail.com</span>
-			<span class="question">Какова цена?</span>
-			<span class="answer">
-				1 задача: от 30₽ до 100₽<br>
-				1 лабораторная: от 1000₽<br>
-				(цена может быть меньше или больше)<br>
-				Верстка, back-end, создание сайта: по договоренности.
-			</span>
-			<span class="question">Нужна ли предоплата?</span>
-			<span class="answer">
-				Для задач и лабораторных предоплата 100%<br>
-			</span>
-			<span class="question">Как производится оплата?</span>
-			<span class="answer">
-				После предоплаты и выполнения мной работы я скину вам видео/скриншоты выполненной работы.<br>
-				Далее скидываете оставшуюся сумму и я кидаю вам все файлы вашей работы.
-			</span>
-			<span class="question">Доработки и правки?</span>
-			<span class="answer">
-				Бесплатные доработки и правки доступны сразу после получения вами файлов (2 часа).<br>
-				Все остальные доработки и правки платные.
-			</span>
-			<span class="question">Поможете выставить сайт на хостинг?</span>
-			<span class="answer">
-				Да, я помогаю выставить сайт на хостинг, в том числе и GitHub Pages
-			</span>
-		</div>
-		
-		<div id="footer">
-			<div class="footer-item">
-				<h3>Технологии</h3>
-				<span>HTML, CSS, PHP, JavaScript</span>
-			</div>
-			<div class="footer-item">
-				<h3>Опыт</h3>
-				<span>2 года практического опыта<br>в веб-разработке</span>
-			</div>
-			<div class="footer-item">
-				<h3>Контакты</h3>
-				<span><a href="https://t.me/fluxdeken">Телеграм</a> @fluxdeken</span>
-				<span>Почта: fluxdekenreboot@gmail.com</span>
-			</div>
-		</div>
-		<script src="index.js"></script>
-	</body>
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<title>Fluxdeken — Мои соцсети</title>
+<style>
+  body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    background: #121212;
+    color: #eee;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    min-height: 100vh;
+    padding: 2rem 1rem;
+  }
+  h1 {
+    margin-bottom: 0.5rem;
+  }
+  p.info {
+    max-width: 600px;
+    text-align: center;
+    margin-bottom: 2rem;
+    line-height: 1.4;
+    color: #bbb;
+  }
+  .links {
+    display: flex;
+    gap: 1.5rem;
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+  .link-btn {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 120px;
+    height: 120px;
+    border-radius: 50%;
+    background: #222;
+    color: #eee;
+    text-decoration: none;
+    font-weight: bold;
+    font-size: 1rem;
+    box-shadow: 0 0 8px #333;
+    transition: background-color 0.3s, box-shadow 0.3s;
+  }
+  .link-btn:hover {
+    background: #4c8bf5;
+    box-shadow: 0 0 15px #4c8bf5;
+    color: #fff;
+  }
+</style>
+</head>
+<body>
+
+<h1>Привет, я Fluxdeken!</h1>
+<p class="info">
+🧠 Привет, я Fluxdeken — независимый разработчик, увлечённый C++, Windows и низкоуровневым программированием.
+🎯 Основной контент с глубокими техническими разборами я выкладываю на Boosty.
+📺 На YouTube — ролики для широкой аудитории: без кода или с краткими фрагментами.
+💻 Если тебе интересны сложные темы, которые не обсуждают в обычных гайдах — заглядывай.
+</p>
+
+<div class="links">
+  <a class="link-btn" href="https://twitch.tv/fluxdekenr" target="_blank" rel="noopener noreferrer">Twitch</a>
+  <a class="link-btn" href="https://youtube.com/@Fluxdeken" target="_blank" rel="noopener noreferrer">YouTube</a>
+  <a class="link-btn" href="https://t.me/fluxdeken" target="_blank" rel="noopener noreferrer">Telegram</a>
+  <a class="link-btn" href="https://boosty.to/fluxdeken" target="_blank" rel="noopener noreferrer">Boosty</a>
+</div>
+
+</body>
 </html>
