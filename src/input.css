@@ -1,0 +1,9 @@
+/* v4-стиль: одна строка + источники */
+@import "tailwindcss";
+
+/* ЯВНО говорим, где искать классы */
+@source "./index.html";
+@source "./**/*.{html,js,jsx,ts,tsx}";
+
+/* при желании: форс-генерация конкретных классов (аналог safelist) */
+/* @source inline("text-4xl font-bold px-6 py-20 rounded-xl shadow hover:shadow-lg from-indigo-600 to-purple-600 bg-white text-indigo-700"); */
